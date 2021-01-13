@@ -17,7 +17,7 @@ document.querySelector(".check").addEventListener("click", function () {
     }
   } else if (guessNr > secretNumber) {
     if (score > 0) {
-      document.querySelector("#msg").textContent = "📈 To high!";
+      document.querySelector("#msg").textContent = "📈 Too high!";
       score--;
       document.querySelector("#score").textContent = `💯 Score: ${score}`;
     } else {
@@ -25,7 +25,7 @@ document.querySelector(".check").addEventListener("click", function () {
     }
   } else if (guessNr < secretNumber) {
     if (score > 0) {
-      document.querySelector("#msg").textContent = "📉 To low!";
+      document.querySelector("#msg").textContent = "📉 Too low!";
       score--;
       document.querySelector("#score").textContent = `💯 Score: ${score}`;
     } else {
